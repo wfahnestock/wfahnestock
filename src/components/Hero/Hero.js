@@ -7,7 +7,7 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const downloadFile = (url, filename) => {
-  fetch('http://wfahnestock.com/assets/files/WFahnestock_Resume.docx', {
+  fetch('http://wfahnestock.com/assets/files/', {
     method: 'GET',
     headers: {
       'Content-Type': 'text/html; charset=UTF-8',
@@ -47,7 +47,9 @@ const Hero = (props) => (
       <SectionText>
         B.Sc Web Design & Development, building web apps since 2014.
       </SectionText>
-      <Button onClick={downloadFile}>Get In Touch</Button>
+      <a onClick={downloadFile} download="WFahnestock_Resume.docx">
+      <Button>Get In Touch</Button>
+      </a>
     </LeftSection>
   </Section>
 );
