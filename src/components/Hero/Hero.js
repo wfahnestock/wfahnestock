@@ -1,6 +1,5 @@
 import React from 'react';
-import axios from 'axios';
-import fileDownload from 'js-file-download';
+
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
