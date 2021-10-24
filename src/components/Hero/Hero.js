@@ -1,8 +1,41 @@
 import React from 'react';
+import axios from 'axios';
+import fileDownload from 'js-file-download';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
+
+const downloadFile = (url, filename) => {
+  fetch('http://wfahnestock.com/assets/files/WFahnestock_Resume.docx', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'text/html; charset=UTF-8',
+    },
+  })
+  .then((response) => response.blob())
+  .then((blob) => {
+    const url = window.URL.createObjectURL(
+      new Blob([blob]),
+    );
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute(
+      'download',
+      `WFahnestock_Resume.docx`,
+    );
+
+    // Append to HTML Link Element page
+    document.body.appendChild(link);
+
+    // Start the download
+    link.click();
+
+    // Clean up and remove the link
+    link.parentNode.removeChild(link);
+  })
+}
+
 
 const Hero = (props) => (
   <Section row nopadding>
@@ -14,7 +47,7 @@ const Hero = (props) => (
       <SectionText>
         B.Sc Web Design & Development, building web apps since 2014.
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com/'}>Contact Me</Button>
+      <Button onClick={downloadFile}>Get In Touch</Button>
     </LeftSection>
   </Section>
 );
