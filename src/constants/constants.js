@@ -22,8 +22,8 @@ export const projects = [
     description: "This project was a kanban board app with working drag-and-drop on lists and cards, also featuring OAuth login via GitHub accounts. This project was completed during my 'Server-Side Languages' course at Full Sail.",
       image: '/images/3.png',
       tags: ['React', 'Express', 'OAuth'],
-    source: '',
-    visit: '',
+    source: 'https://github.com/wfahnestock/kanban-asura',
+    visit: 'https://wfahnestock.github.io/kanban-asura/',
     id: 2,
   },
   {
