@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: 'Bike Shop',
-    description:"This website was created with vanilla HTML, CSS, and JavaScript to re-create a website based upon images shown to me by my instructor. The goal of this recreation was to match the images as closely as possible while only have images from the source material.",
+    description:"This website was created with vanilla HTML, CSS, and JavaScript to re-create a website based upon images shown to me by my instructor. The goal of this recreation was to match the images as closely as possible while only being given the images utilized by the completed site.",
     image: '/images/2.png',
     tags: ['HTML5', 'CSS3', 'JavaScript'],
     source: 'https://github.com/wfahnestock/wfahnestock.github.io',
