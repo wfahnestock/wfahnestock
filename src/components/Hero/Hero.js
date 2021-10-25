@@ -46,7 +46,7 @@ const Hero = (props) => (
       <SectionText>
         B.Sc Web Design & Development, building web apps since 2014.
       </SectionText>
-      <a onClick={downloadFile} download="WFahnestock_Resume.docx">
+      <a onClick={downloadFile} download="WFahnestock_Resume.pdf">
       <Button>Get In Touch</Button>
       </a>
     </LeftSection>
