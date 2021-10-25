@@ -9,7 +9,7 @@ const downloadFile = (url, filename) => {
   fetch('http://wfahnestock.com/assets/files/', {
     method: 'GET',
     headers: {
-      'Content-Type': 'text/html; charset=UTF-8',
+      'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
     },
   })
   .then((response) => response.blob())
