@@ -6,10 +6,10 @@ import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 
 const downloadFile = (url, filename) => {
-  fetch('http://wfahnestock.com/assets/files/WFahnestock_Resume.docx', {
+  fetch('http://wfahnestock.com/assets/files/WFahnestock_Resume.pdf', {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      'Content-Type': 'application/pdf',
     },
   })
   .then((response) => response.blob())
