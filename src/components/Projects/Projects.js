@@ -26,8 +26,8 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            {visit.length ? <ExternalLinks href={visit} target="_blank">Visit</ExternalLinks> : <ExternalLinks target="_blank" aria-disabled>Visit</ExternalLinks>}
-            {source.length ? <ExternalLinks href={source} target="_blank">Code</ExternalLinks> : <ExternalLinks target="_blank" aria-disabled>Code</ExternalLinks>}
+            {visit.length ? <ExternalLinks href={visit} target="_blank">Visit</ExternalLinks> : <ExternalLinks target="_blank" aria-disabled style={{cursor: 'not-allowed',userSelect: 'none'}}>Visit</ExternalLinks>}
+            {source.length ? <ExternalLinks href={source} target="_blank">Code</ExternalLinks> : <ExternalLinks target="_blank" aria-disabled style={{cursor: 'not-allowed',userSelect: 'none'}}>Code</ExternalLinks>}
             
           </UtilityList>
         </BlogCard>

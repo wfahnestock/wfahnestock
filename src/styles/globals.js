@@ -33,10 +33,10 @@ const GlobalStyles = createGlobalStyle`
   }
   .deDiGA[aria-disabled=true] {
     cursor: not-allowed;
-    -webkit-user-select: none;  /* Chrome all / Safari all */
-    -moz-user-select: none;     /* Firefox all */
-    -ms-user-select: none;      /* IE 10+ */
-    user-select: none;          /* Likely future */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
 `;
