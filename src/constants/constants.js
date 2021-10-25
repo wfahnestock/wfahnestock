@@ -39,7 +39,8 @@ export const projects = [
 
 export const TimeLineData = [
   { year: 2014, text: 'Started dabbling in development', },
-  { year: 2015, text: 'Graduated computer programming program @ York Tech', },
+  { year: 2014, text: 'SkillsUSA Web Dev Silver Medalist', },
+  { year: 2015, text: 'Graduated computer programming concentration @ York Tech', },
   { year: 2019, text: 'Started my B.Sc Degree @ Full Sail', },
   { year: 2021, text: 'Graduated from Full Sail University; B.Sc Web Design & Development', },
 ];

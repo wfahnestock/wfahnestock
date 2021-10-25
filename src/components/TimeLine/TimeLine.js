@@ -43,7 +43,10 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>Here is a timeline of my journey through Web Development so far, with only the important details noted.</SectionText>
+      <SectionText>
+        Below is the timeline of my journey through Web Development. <br />
+        Only important details noted.
+      </SectionText>
       <CarouselContainer ref={carouselRef}>
         <>
           {TimeLineData.map((item, index) => (
