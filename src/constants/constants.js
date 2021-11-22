@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: 'This Portfolio',
-    description: "The site you are on right now was created utilizing Node.js, React, and Next to create a functional single page application that responsively handles devices of all sizes.",
+    description: "The site you are on right now was created utilizing Node.js, React, and NextJS to create a functional single page application that responsively handles devices of all sizes, with server-side rendering from Next.",
       image: '/images/1.png',
       tags: ['Next', 'React', 'Node'],
     source: '#',
