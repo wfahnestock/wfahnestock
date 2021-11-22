@@ -4,6 +4,10 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
+const stackStyle = {
+  paddingTop: "15px"
+}
+
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
@@ -18,7 +22,7 @@ const Projects = () => (
           </TitleContent>
           <CardInfo>{description}</CardInfo>
           <div>
-            <HeaderThree>Stack</HeaderThree>
+            <HeaderThree style={stackStyle}>Stack</HeaderThree>
             <TagList>
               {tags.map((tag, i) => (
                 <Tag key={i}>{tag}</Tag>
