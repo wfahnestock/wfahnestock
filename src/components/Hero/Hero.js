@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
@@ -44,8 +43,9 @@ const Hero = (props) => (
         Will Fahnestock
       </SectionTitle>
       <SectionText>
+        Software Developer @ Access411 <br/>
         B.Sc Web Design & Development <br />
-        Creating web apps since 2014.
+        {/* Creating web apps since 2014. */}
       </SectionText>
       <a onClick={downloadFile} download="WFahnestock_Resume.pdf">
       <Button>Get In Touch</Button>
