@@ -1,5 +1,5 @@
 import React from 'react';
-import { DiFirebase, DiReact } from 'react-icons/di';
+import { DiFirebase, DiReact, DiResponsive } from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
@@ -17,7 +17,7 @@ const Technologies = () =>  (
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
             Experience with: <br />
-            React.js, MaterialUI & Bootstrap
+            React.js, Angular 13 & Bootstrap
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -27,10 +27,23 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with: <br />
-            Node.js, Express & APIs
+            MS SQL Server, ExpressJS, NextJS
           </ListParagraph>
         </ListContainer>
       </ListItem>
+
+      <ListItem>
+        <DiResponsive size="6rem" />
+        <ListContainer>
+          <ListTitle>Mobile</ListTitle>
+          <ListParagraph>
+            Experience with: <br />
+            React Native and Xamarin
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+
+
     </List>
     <SectionDivider />
   </Section>
