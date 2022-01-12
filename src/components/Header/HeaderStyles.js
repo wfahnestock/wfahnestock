@@ -20,6 +20,10 @@ export const Container = styled.div`
 
 export const Logo = styled.span`
   font-size: 2rem;
+  transition: 0.4s ease;
+  &:hover {
+    color: #177BBD;
+  }
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -56,7 +60,7 @@ export const NavLink = styled.a`
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
   &:hover {
-    color: #fff;
+    color: #177bbd;
     opacity: 1;
     cursor: pointer;
   }
