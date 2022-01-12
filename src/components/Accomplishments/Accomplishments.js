@@ -5,7 +5,7 @@ import { Box, Boxes, BoxNum, BoxText } from './AccomplishmentsStyles';
 
 const data = [
   { number: 20, text: 'Completed Projects'},
-  { number: 3.3, text: 'College GPA', },
+  { number: 3.58, text: 'College GPA', },
 ];
 
 const Accomplishments = () => (
@@ -14,7 +14,7 @@ const Accomplishments = () => (
     <Boxes>
       {data.map((card, index) => (
         <Box key={index}>
-          <BoxNum>{card.number}+</BoxNum>
+          <BoxNum>{card.number}</BoxNum>
           <BoxText>{card.text}</BoxText>
         </Box>
       ))}
