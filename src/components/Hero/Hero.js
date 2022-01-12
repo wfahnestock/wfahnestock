@@ -20,7 +20,7 @@ const downloadFile = (url, filename) => {
     link.href = url;
     link.setAttribute(
       'download',
-      `WFahnestock_Resume.docx`,
+      `WFahnestock_Resume.pdf`,
     );
 
     // Append to HTML Link Element page
