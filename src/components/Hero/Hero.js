@@ -1,4 +1,6 @@
 import React from 'react';
+import Typing from 'react-typing-animation';
+import Cursor from 'react-typing-animation/dist/Cursor';
 
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
@@ -34,8 +36,9 @@ const downloadFile = (url, filename) => {
   })
 }
 
-
 const Hero = (props) => (
+
+
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
@@ -43,9 +46,13 @@ const Hero = (props) => (
         Will Fahnestock
       </SectionTitle>
       <SectionText>
-        Software Developer @ Access411 <br/>
-        B.Sc Web Design & Development <br />
-        {/* Creating web apps since 2014. */}
+        <Typing>
+          Software Developer @ Access411<br />
+          B.Sc Web Design & Development<br />
+          Creating web apps since 2014. <Cursor />
+        </Typing>
+        
+        {/*  */}
       </SectionText>
       <a onClick={downloadFile} download="WFahnestock_Resume.pdf">
       <Button>Get In Touch</Button>
